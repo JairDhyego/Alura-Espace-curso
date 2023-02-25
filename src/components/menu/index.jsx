@@ -1,0 +1,42 @@
+import home from "assets/icones/home-ativo.png";
+import maisCurtidas from "assets/icones/mais-curtidas-inativo.png";
+import maisVistas from "assets/icones/mais-vistas-inativo.png";
+import novaInativo from "assets/icones/novas-inativo.png";
+import surpreendaMe from "assets/icones/surpreenda-me-inativo.png";
+
+import styles from "./Menu.module.scss";
+
+const Menu = () => {
+  return (
+    <nav className={styles.menu}>
+      <ul className={styles.menu__lista}>
+        <li className={styles.menu__item}>
+          <img src={home} alt="" />
+          <a href="/">Início</a>
+        </li>
+
+        <li className={styles.menu__item}>
+          <img src={maisCurtidas} alt="" />
+          <a href="/maiscurtidas">Mais curtidas</a>
+        </li>
+
+        <li className={styles.menu__item}>
+          <img src={maisVistas} alt="" />
+          <a href="maisvistas">Mais vistas</a>
+        </li>
+
+        <li className={styles.menu__item}>
+          <img src={novaInativo} alt="" />
+          <a href="novas">Novas</a>
+        </li>
+
+        <li className={styles.menu__item}>
+          <img src={surpreendaMe} alt="" />
+          <a href="surpreendame">Surpreenda-me</a>
+        </li>
+      </ul>
+    </nav>
+  );
+};
+
+export default Menu;
